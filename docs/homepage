@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sweets & Treats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the homepage for Sweets & Treats. Here you can look through recipies, desserts for sale, and more information about the owner and store.">
+	<meta name="keywords" content="HTML,Sweets & Treats, Sweets and Treats, Sweets, Treats, Dessert, Emily Shafer, Bakery">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container"><a href="#MainContent">Skip to Main Content</a>
+	<header>
+		<button onclick="openNav()">Menu</button>
+	</header>
+	<nav class="drawer" id="theDrawer">
+		<button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+			<ul>
+				<li><a href="homepage.html" onfocus="openNav()" aria-current="page">Home</a></li>
+				<li><a href="article1.html" onfocus="openNav()">Menu</a></li>
+				<li><a href="section.html" onfocus="openNav()">Recipies</a></li>
+				<li><a href="404.html" onfocus="openNav()">About Us</a></li>
+			</ul>
+	</nav>
+		<main id="MainContent">
+		<article>
+        <h1>Recipie of the Day</h1>
+
+		<!-- <picture>
+			<source media="(min-width: 50rem)" srcset="assets/Grogans_Virus_web.jpg">
+			<img src="assets/Grogans_Virus_web.jpg" alt="A digitally enhanced image of Grogan's Disease.">
+		</picture>
+			<a href="article1.html"> Four Dead, Dozens Infected with Grogan's Disease in Northeastern US</a>
+		<br><br><br>
+		<h2>Recent Articles</h2>
+		<picture>
+			<source media="(min-width: 50rem)" srcset="assets/Hospital_Microscope.jpg">
+			<img src="assets/Hospital_Microscope.jpg" alt="Picture of a microscope.">
+		</picture>
+			<a href="article2.html"> Doctor with 30 Years of Treating Rare Illnesses Discovers a New Disease</a> -->
+
+    </article>
+	</main>
+<footer>
+    <p class="copyright">&copy;2021 by Emily Shafer</p>
+</footer>
+	</div>
+<script src="drawer.js">
+</script>
+</body>
+</html>
