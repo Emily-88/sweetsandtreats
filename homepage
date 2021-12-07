@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Sweets & Treats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the homepage for Sweets & Treats. Here you can look through recipies, desserts for sale, and more information about the owner and store.">
+	<meta name="keywords" content="HTML,Sweets & Treats, Sweets and Treats, Sweets, Treats, Dessert, Emily Shafer, Bakery">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
