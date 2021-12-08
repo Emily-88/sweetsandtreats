@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Cake Flour - Sweets & Treats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the homepage for Sweets & Treats. Here you can look through recipies, desserts for sale, and more information about the owner and store.">
+	<meta name="keywords" content="HTML,Sweets & Treats, Sweets and Treats, Sweets, Treats, Dessert, Emily Shafer, Bakery">
+	<link href="css/stylesheet.css" rel="typekit">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container"><a href="#MainContent">Skip to Main Content</a>
+		<header>
+			<button onclick="openNav()">Menu</button>
+		</header>
+		<nav class="drawer" id="theDrawer">
+			<button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+			<span class="logo" style="font-family: Learning Curve;">Sweets & Treats</span>
+				<ul>
+					<li><a href="homepage.html" onfocus="openNav()" aria-current="page">Home</a></li>
+					<li><a href="404.html" onfocus="openNav()">Menu</a></li>
+					<li><a href="404.html" onfocus="openNav()">Recipes</a></li>
+					<li><a href="about.html" onfocus="openNav()">About</a></li>
+				</ul>
+		</nav>
+		<main id="MainContent">
+		<article>
+			<h1>How to Make Cake Flour</h1>
+			<p>Ever get halfway through a recipe and then realize you're out of something? That's happened to me plenty of times, despite my mother constantly telling me to fully read the recipe before baking.</p>
+			<p>While I can't always find a perfect substitute, I did discover you can make a pretty good cake flour with just all-purpose flour and some cornstarch!</p>
+			<h2>Ingredients</h2>
+			<ul>
+				<li>All purpose flour</li>
+				<li>Cornstarch</li>
+			</ul>
+			<h3>Ratio</h3>
+			<ul>
+				<li>Take 1 full cup of all purpose flour, and remove 2 tablespoons from it (I like to dump the flour into a clean bowl to scoop out the tablespoons; it's less messy)</li>
+				<li>Replace the removed flour with cornstarch</li>
+				<li>Ta-da! You now have 1 cup of cake flour!</li>
+			</ul>
+        </article>
+	</main>
+<footer>
+    <p class="copyright">&copy;2021 by Emily Shafer</p>
+</footer>
+	</div>
+<script src="drawer.js">
+</script>
+</body>
+</html>  

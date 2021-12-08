@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -12,12 +12,277 @@ html {
     line-height: 1.4rem;
 }
 
-/* 
-Baseline Grid
-.7
-1.4
-2.1
-2.8
-3.5
-4.2 
-*/
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+ }
+ 
+body {
+    background-color: #ffffff;
+    min-height: 100%;
+ }
+
+main, footer{
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 40rem;
+    padding: .7rem;
+}
+
+footer{
+    color: #fff1e6;
+    background-color: #944654;
+    height: 2.1rem;
+    padding:.7rem;
+}
+
+header{
+    position: fixed;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    height: 2.8rem;
+    background-color: #944654;
+	justify-content: space-between;
+    z-index: 800;
+}
+
+h1, h2, h3 {
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 1.4rem;
+    margin-top: 2.1rem;
+    margin-bottom: .7rem;
+    color: #944654;
+}
+
+h1 {
+    font-size: 2.8rem;
+}
+
+h2 {
+    font-size: 2.1rem;
+}
+
+p, ul { 
+    margin-bottom: 1.4rem;
+    margin-top: 1rem;
+}
+
+ul {
+    margin-left: 1rem;
+}
+
+.logo {
+    color:#fff1e6;
+    font-size: 2.1rem;
+    display: flex; 
+    justify-content: center;
+    padding-top: .7rem;
+}
+
+nav ul {
+    margin-top: .7rem;
+    margin-bottom: 0rem;
+    margin-left: 0rem;
+    list-style-type: none;
+}
+
+p.category{
+    position: relative;
+}
+
+.category {
+    background-color: #EDEEED;
+    color:#000000;
+    padding: .5rem;
+    display: inline-block;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 40rem;
+    position: relative;
+    background-color: #ffffff;
+}
+
+button {
+    position: absolute;
+    right: 1rem;
+    top: -.75rem;
+    font-size: 1rem;
+    padding: .5rem;
+    border-radius: 8px;
+    margin: 1rem;
+    z-index: 999;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+    background-color: #000000;
+    border: 1px solid #944654;
+}
+
+a.skip,
+a.skip:visited {
+    color: #944654;
+    padding: .625rem;
+    position: fixed;
+    top: -6.25rem;
+    z-index: 1001;
+}
+
+a.skip:focus {
+    top: 0;
+}
+
+.drawer {
+    height: 100vh;
+    width: 250px;
+    /* max-width: 100%; */
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    right: -250px;
+    background-color: #944654;
+    overflow-x: hidden;
+    padding-top: 2.5rem;
+    transition: right 0.5s;
+}
+
+.drawer button {
+    border: 0;
+    background: none;
+}
+
+.drawer a,
+.drawer a:visited,
+.drawer button {
+    padding-left: .625rem;
+    padding-right: .625rem;
+    text-decoration: none;
+    font-size: 1.25rem;
+    color: #fff1e6;
+    display: block;
+    transition: color 0.3s;
+}
+
+.drawer a:hover,
+.drawer a:focus,
+.drawer a:active,
+.drawer button:hover,
+.drawer button:focus,
+.drawer button:active {
+    color: #fff1e6;
+    text-transform: uppercase;
+}
+
+.drawer .closeBtn {
+    position: absolute;
+    top: 0;
+    right: .625rem;
+    font-size: 2.25rem;
+}
+
+a {
+	display: inline-block;
+    color: #944654;
+    transition: .5s linear;
+    outline: none;
+    text-decoration: none;
+}
+
+a:link {
+	color: #944654;
+    font-weight: 700;
+}
+
+a:visited {
+	color: #944654;
+}
+
+a:focus {
+	color: #000000;
+	text-decoration: underline 2px solid;
+}
+
+a:hover {
+    color: #944654;
+    text-decoration: underline 2px dashed;
+}
+
+a:active {
+	color: #000000;
+	text-decoration: underline 2px solid;
+}
+
+@media screen and (min-width: 40rem){
+	html {
+		font-size: 1.2rem;
+        margin: auto;
+	}
+    main, footer{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    main {
+        margin-top: 2.5rem;
+    }
+}
+    figure.left{
+		width: 50%;
+		float: left;
+		margin-right: 1.4rem;
+	}
+	figure.right{
+		width: 50%;
+		float: right;
+		margin-left: 1.4rem;
+	}
+    figure.center{
+        width: 75%;
+        float: none;
+        margin: auto;
+    }
+    header,
+    button,
+    .drawer .closeBtn {
+        display: none;
+    }
+    a.skip,
+    a.skip:visited {
+        background-color: #944654;
+        color: #000000;
+        text-decoration: none;
+    }
+    a.skip:hover,
+    a.skip:focus {
+        outline-color: #000000;
+        text-decoration: none;
+    }
+    .drawer {
+        width: 40rem;
+        height: 4.8rem;
+        margin: 0 auto;
+        right: auto !important;
+        padding: 0;
+    }
+    .drawer ul {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        text-align: center;
+        max-width: 40rem;
+    }
+    .drawer a {
+        padding-left: .625rem;
+        padding-right: .625rem;
+    }
+
+@media screen and (min-width:68.75rem){
+	html {
+		font-size: 1.5rem;
+	}
+}

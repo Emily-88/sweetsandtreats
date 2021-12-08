@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Chill Dough - Sweets & Treats</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="This is the homepage for Sweets & Treats. Here you can look through recipies, desserts for sale, and more information about the owner and store.">
+	<meta name="keywords" content="HTML,Sweets & Treats, Sweets and Treats, Sweets, Treats, Dessert, Emily Shafer, Bakery">
+	<link href="css/stylesheet.css" rel="typekit">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="container"><a href="#MainContent">Skip to Main Content</a>
+		<header>
+			<button onclick="openNav()">Menu</button>
+		</header>
+		<nav class="drawer" id="theDrawer">
+			<button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+			<span class="logo" style="font-family: Learning Curve;">Sweets & Treats</span>
+				<ul>
+					<li><a href="homepage.html" onfocus="openNav()" aria-current="page">Home</a></li>
+					<li><a href="404.html" onfocus="openNav()">Menu</a></li>
+					<li><a href="404.html" onfocus="openNav()">Recipes</a></li>
+					<li><a href="about.html" onfocus="openNav()">About</a></li>
+				</ul>
+		</nav>
+		<main id="MainContent">
+		<article>
+			<h1>Why I Chill my Cookie Dough Prior to Baking</h1>
+			<p>I only heard of this trick a few years ago, and it changed my baking game in the best way possible. Cookies have always been my specialty, but sometimes there were inconsistencies between batches. Some were flat and crunchy, while others were puffy and gooey. While I personally love all types of cookies, I did not enjoy the mystery of how my cookies would turn out.</p> 
+            <p>Then, while searching for a new recipe, the author mentioned that you should cool the dough overnight before baking. This led me down a rabbithole of dough-chilling, and I began to wonder, why overnight? Once it's cold, what do the extra hours add to this? After much research and testing, I have found that letting cookies cool longer allows the flavors to combine more, and ultimately adds more depth to your dough. It also helps ensure consistency, as it gives the dough time to settle and come to a set temperature. So, try to let your cookies cool as long as you can, but if you're impatient like me, 30 minutes is plenty of time for the cookies to get to an even level, allowing for consistent batches.</p>
+            <p>Happy Baking!</p>
+        </article>
+	</main>
+<footer>
+    <p class="copyright">&copy;2021 by Emily Shafer</p>
+</footer>
+	</div>
+<script src="drawer.js">
+</script>
+</body>
+</html>  
