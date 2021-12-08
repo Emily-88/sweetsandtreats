@@ -3,3 +3,21 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    font-family: "Comfortaa", "Learning Curve", Arial, sans-serif;
+    font-style: normal;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4rem;
+}
+
+/* 
+Baseline Grid
+.7
+1.4
+2.1
+2.8
+3.5
+4.2 
+*/
