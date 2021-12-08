@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    /* box-sizing: border-box; */
 }
 
 html {
@@ -20,6 +20,7 @@ html, body {
  
 body {
     background-color: #ffffff;
+    min-height: 100%;
  }
 
 main, footer{
@@ -32,7 +33,8 @@ main, footer{
 footer{
     color: #fff1e6;
     background-color: #944654;
-    height: 2.8rem;
+    height: 2.1rem;
+    padding:.7rem;
 }
 
 header{
@@ -120,7 +122,7 @@ button {
 button:hover,
 button:focus,
 button:active {
-    background-color: #fff1e6;
+    background-color: #000000;
     border: 1px solid #944654;
 }
 
@@ -174,7 +176,7 @@ a.skip:focus {
 .drawer button:hover,
 .drawer button:focus,
 .drawer button:active {
-    color: #eddcd2;
+    color: #fff1e6;
     text-transform: uppercase;
 }
 
@@ -203,7 +205,7 @@ a:visited {
 }
 
 a:focus {
-	color: #eddcd2;
+	color: #000000;
 	text-decoration: underline 2px solid;
 }
 
@@ -213,7 +215,7 @@ a:hover {
 }
 
 a:active {
-	color: #eddcd2;
+	color: #000000;
 	text-decoration: underline 2px solid;
 }
 
