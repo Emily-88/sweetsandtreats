@@ -219,17 +219,23 @@ a:active {
 	text-decoration: underline 2px solid;
 }
 
-@media screen and (min-width: 40rem){
+@media screen and (max-width: 40rem){
 	html {
 		font-size: 1.2rem;
         margin: auto;
 	}
+    body {
+        padding-top: 0px;
+      }
     main, footer{
         margin-left: auto;
         margin-right: auto;
     }
-    main {
-        margin-top: 2.5rem;
+    h1{
+        padding-top: 50px;
+    }
+    h1, h2, h3 {
+        line-height: 2.1rem;
     }
 }
     figure.left{
@@ -281,7 +287,7 @@ a:active {
         padding-right: .625rem;
     }
 
-@media screen and (min-width:68.75rem){
+@media screen and (min-width:70rem){
 	html {
 		font-size: 1.5rem;
 	}
