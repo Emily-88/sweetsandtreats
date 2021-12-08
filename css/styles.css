@@ -89,8 +89,7 @@ p.category{
     background-color: #ffffff;
 }
 
-button {
-    /* float: right; */
+/* button {
     position: absolute;
     right: 1rem;
     top: -.75rem;
@@ -200,6 +199,27 @@ a:hover {
 a:active {
 	color: #eddcd2;
 	text-decoration: underline 2px solid;
+} */
+.navbar .navbar-nav .nav-link {
+    color: #000000;
+    font-size: 1.1em;
+}
+.navbar .navbar-nav .nav-link:hover{
+    color: #eddcd2;
+}
+@media only screen and (min-width: 40rem) {
+  .navbar {
+    flex-direction: column;
+  }
+
+  .navbar .nav-item {
+    padding: 0.5em 1em;
+  }
+}
+
+.navbar .navbar-nav {
+  margin-top: 0.5em;
+  border-top: 2px solid #000;
 }
 
 @media screen and (min-width: 40rem){
@@ -214,7 +234,8 @@ a:active {
     main {
         margin-top: 2.5rem;
     }
-    figure.left{
+}
+    /* figure.left{
 		width: 50%;
 		float: left;
 		margin-right: 1.4rem;
@@ -228,9 +249,6 @@ a:active {
         width: 75%;
         float: none;
         margin: auto;
-    }
-    .logo {
-        width: 300px; 
     }
     header,
     button,
@@ -265,7 +283,7 @@ a:active {
         padding-left: .625rem;
         padding-right: .625rem;
     }
-}
+} */
 
 @media screen and (min-width:68.75rem){
 	html {
