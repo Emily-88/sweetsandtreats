@@ -12,32 +12,19 @@
 
 <body>
 	<div class="container"><a href="#MainContent">Skip to Main Content</a>
-	<header>
-		<button onclick="openNav()">Menu</button>
-	</header>
-	<nav class="navbar navbar-expand-lg navbar-light"  style="background-color: #18d2f8;">
-		<a class="navbar-brand" href="#"><img src="https://codingyaar.com/wp-content/uploads/logo.png"></a>
-		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbarToggler13"
-			aria-controls="myNavbarToggler13" aria-expanded="false" aria-label="Toggle navigation">
-			<span class="navbar-toggler-icon"></span>
-		</button>
-		<div class="collapse navbar-collapse" id="myNavbarToggler13">
-			<ul class="navbar-nav mx-auto">
-				<li class="nav-item">
-					<a class="nav-link" href="homepage.html">Home</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="404.html">Menu</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="404.html">Recipes</a>
-				</li>
-				<li class="nav-item">
-					<a class="nav-link" href="404.html">About</a>
-				</li>
-			</ul>
-		</div>
-	</nav>
+		<header>
+			<button onclick="openNav()">Menu</button>
+		</header>
+		<nav class="drawer" id="theDrawer">
+			<button aria-label="Close" class="closeBtn" onfocus="openNav()" onclick="closeNav()">&times;</button>
+			<span class="logo" style="font-family: Learning Curve;">Sweets & Treats</span>
+				<ul>
+					<li><a href="homepage.html" onfocus="openNav()" aria-current="page">Home</a></li>
+					<li><a href="404.html" onfocus="openNav()">Menu</a></li>
+					<li><a href="404.html" onfocus="openNav()">Recipes</a></li>
+					<li><a href="about.html" onfocus="openNav()">About</a></li>
+				</ul>
+		</nav>
 		<main id="MainContent">
 		<article>
         <h1>Hours</h1>
